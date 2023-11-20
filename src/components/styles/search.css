@@ -1,0 +1,145 @@
+/* Add any other styling you need for your content */
+
+@font-face {
+  font-family: "Amithen";
+  src: url("../../../public/Amithen.otf") format("opentype"); /* Adjust the path if necessary */
+}
+
+h1 {
+  font-family: "Amithen", serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: "Amithen", sans-serif;
+}
+
+h1 {
+  font-family: "Amithen", serif;
+}
+
+#one {
+  background-image: url("../images/map22.png");
+  background-position: 0px 30%;
+  background-size: cover;
+  position: fixed;
+  inset: 0px;
+  z-index: 1;
+  /* opacity: 0.4; */
+  transition: all 0.3s ease 0s;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: #fff;
+  background: #ff654a;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: gray;
+}
+
+.wrapper .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li {
+  display: block;
+}
+.autocom-box li:hover {
+  background: #efefef;
+}
+
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 17px;
+
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.wrapper2 {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+/* For WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0.5em; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+/* For Firefox */
+/* You may need to use a Firefox-specific class on your container */
+.scrollbar-hide {
+  scrollbar-width: none;
+}

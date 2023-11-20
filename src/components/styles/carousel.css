@@ -1,0 +1,32 @@
+.carousel-container {
+  position: relative;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.carousel img {
+  display: none;
+  max-width: 100%;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,9 @@
+.hover-item {
+    transition: 0.3s;
+
+  }
+  .hover-item:hover {
+    transform: translate(0, -5px);
+    background-color: #e5f9f3;
+    border-color: #01c684;
+  }
